@@ -13,7 +13,7 @@ use Magento\Framework\View\Result\PageFactory;
  */
 class Index extends Action implements HttpGetActionInterface
 {
-    const MENU_ID = 'Radek_Blog::greetings_posts';
+    const MENU_ID = 'Radek_Blog::blog_posts';
 
     /**
      * @var PageFactory
