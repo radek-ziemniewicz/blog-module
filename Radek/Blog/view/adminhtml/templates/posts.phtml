@@ -1,1 +1,15 @@
-<p>List of posts on your blog.</p>
+<p>Posts</p>
+<table>
+
+<?php
+
+foreach ($block->getPosts() as $post) {
+    echo '<tr><td>', $post->getTitle(), '</td><td>';
+    echo '<a href="', $block->getPostUrl($post), '">Show</a>';
+    echo '<a href="', $block->getEditPostUrl($post), '">Edit</a>';
+    echo '</td></tr>';
+}
+
+?>
+
+</table>
